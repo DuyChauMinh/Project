@@ -4,7 +4,9 @@
   "description": "Final Project University",
   "main": "index.js",
   "scripts": {
-    "test": "Test command"
+    "test": "Test command",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
   "author": "Duy",
   "license": "ISC",
