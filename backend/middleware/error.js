@@ -1,13 +1,22 @@
-const ErrorHandler = require("../utils/errorhander");
+const ErrorHandler = require('../utils/errorhander')
 
-module.exports = (err, req,res,  next) => {
-  err.statusCode = err.statusCode || 500;
-  err.message = err.message || "Internal Server Error";
+module.exports = (err, req, res, next) => {
+  err.statusCode = err.statusCode || 500
+  err.message = err.message || 'Internal Server Error'
+
+  // Wrong Mongodb Id error
+  if (err.name === 'CastError') {
+    //display postman message
+    const message = `Resource not found. Invalid: ${err.path}`
+    err = new ErrorHandler(message, 400)
+  }
 
   res.status(err.statusCode).json({
-      //display on postman
+    //display on postman
     success: false,
     message: err.message,
-  });
-};
-//1.22.58
+  })
+}
+
+
+
