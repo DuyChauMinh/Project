@@ -5,7 +5,7 @@ import {
 //  newProductReducer,
 //  newReviewReducer,
   productDetailsReducer,
-  productReducer,
+//  productReducer,
 //  productReviewsReducer,
   productsReducer,
 //  reviewReducer,0

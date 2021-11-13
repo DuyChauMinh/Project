@@ -19,7 +19,7 @@ export const productsReducer = (state = { products: [] }, action) => {
       return {
         loading: false,
         products: action.payload.products,
-        //productsCount: action.payload.productsCount,
+        productsCount: action.payload.productsCount,
       };
     case ALL_PRODUCT_FAIL:
       return {
@@ -62,6 +62,10 @@ export const productDetailsReducer = (state = { product: {} }, action) => {
       return state;
   }
 };
+//6.37.16 adding filtraion in frontend 
+
+
+
 
 
 
