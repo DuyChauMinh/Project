@@ -108,7 +108,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
    return next(new ErrorHander(error.message, 500));
  }
 });
-//321
+
 // Reset Password
 exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
   // creating token hash
