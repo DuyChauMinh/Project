@@ -68,7 +68,7 @@ const ProductDetails = ({ match }) => {
           <div className="detailsBlock-3-1">
             <div className="detailsBlock-3-1-1">
               <button>-</button>
-              <input value="1" type="number" />
+              <input type="number" />
               <button>+</button>
             </div>{' '}
             <button>Add to Cart</button>
@@ -101,5 +101,4 @@ const ProductDetails = ({ match }) => {
     </Fragment>
   )
 }
-//6.14.41
 export default ProductDetails
