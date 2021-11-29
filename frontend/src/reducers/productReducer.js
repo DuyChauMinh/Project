@@ -64,7 +64,7 @@ export const productDetailsReducer = (state = { product: {} }, action) => {
       return state;
   }
 };
-//6.37.16 adding filtraion in frontend 
+
 
 
 
