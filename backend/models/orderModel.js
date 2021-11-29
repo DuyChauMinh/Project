@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-//4.00
 const orderSchema = new mongoose.Schema({
   shippingInfo: {
     address: {
